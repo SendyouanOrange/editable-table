@@ -10,7 +10,6 @@ const mutations = {
     state.info = info;
   },
   setInfoRow(state, rowData){
-    console.log(rowData)
     let info = JSON.parse(JSON.stringify(state.info))
     let data = info.data
     data[rowData.index] = rowData.row

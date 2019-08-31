@@ -48,7 +48,6 @@ export default class EditableTable extends Vue {
       title: this.info.title,
       data: this.rowData.filter(v => !v.checked).map(d => {
         delete d.checked
-        console.log(d)
         return d
       })
     })
