@@ -26,6 +26,7 @@ export default class Index extends Vue {
 .container {
   width: 100vw;
   height: 100vh;
+  overflow: auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
