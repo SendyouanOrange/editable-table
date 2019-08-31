@@ -9,11 +9,11 @@ const mutations = {
   setInfo(state, info) {
     state.info = info;
   },
-  setInfoRow(state, rowData){
+  setInfoRow(state, rowData) {
     let info = JSON.parse(JSON.stringify(state.info))
     let data = info.data
     data[rowData.index] = rowData.row
-    state.info= {
+    state.info = {
       title: info.title,
       data,
     }
@@ -27,8 +27,8 @@ const actions = {
   setInfo({ commit }, info) {
     commit('setInfo', info)
   },
-  setInfoRow({ commit }, rowData){
-    commit('setInfoRow',  rowData)
+  setInfoRow({ commit }, rowData) {
+    commit('setInfoRow', rowData)
   }
 }
 export default {

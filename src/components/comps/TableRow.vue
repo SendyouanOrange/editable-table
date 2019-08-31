@@ -34,7 +34,7 @@ export default class TableRow extends Vue {
   }
   changeCell (v, key) {
     this.data[key] = v
-    this.setInfoRow({row: this.data, index: this.index})
+    this.setInfoRow({ row: this.data, index: this.index })
   }
 }
 </script>
@@ -77,10 +77,10 @@ export default class TableRow extends Vue {
 }
 .cell-input {
   position: absolute;
-  top:2px;
+  top: 2px;
   left: 50%;
   bottom: 2px;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   width: 90%;
   border: none;
 }
