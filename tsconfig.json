@@ -8,7 +8,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["*", "src/*"]
+      "@": ["*"],
+      "*": ["*", "src/*"],
+      "components/*": ["src/components/*"],
+      "page/*": ["src/page/*"],
+      "utils/*": ["src/utils/*"],
     },
     "jsx": "preserve",
     "jsxFactory": "h",
@@ -27,6 +31,7 @@
       "es2015.promise"
     ],
     "sourceMap": true,
-    "pretty": true
+    "pretty": true,
+    "strictNullChecks": false
   }
 }

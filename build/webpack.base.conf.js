@@ -6,8 +6,7 @@ const vueLoaderConfig = require('./vue-loader.conf')
 const webpack = require('webpack')
 const { VueLoaderPlugin } = require('vue-loader')
 // const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
-
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
@@ -33,28 +32,6 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.(js|vue)$/,
-      //   loader: 'eslint-loader',
-      //   enforce: 'pre',
-      //   include: [resolve('src'), resolve('test')],
-      //   options: {
-      //     formatter: require('eslint-friendly-formatter')
-      //   }
-      // },
-      // {
-      //   test: /\.tsx?$/,
-      //   exclude: /node_modules/,
-      //   enforce: 'pre',
-      //   use: [
-      //     {
-      //         loader: 'tslint-loader',
-      //         options: {
-      //             configFile: 'tslint.json'
-      //         }
-      //     }
-      //   ]
-      // },
       {
         test: /\.vue$/,
         loader: 'vue-loader'
